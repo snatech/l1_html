@@ -1,0 +1,207 @@
+header{
+    position: relative;
+    width: 100%;
+}
+
+header .div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9a16b;
+    /* display: none; */
+    color: white;
+}
+
+header nav{
+    background-color: #292929;
+    position: relative;
+    z-index: 88888;
+}
+
+header nav div{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div:nth-child(1){
+    justify-content: start;
+}
+
+header nav div img{
+    width: 130px;
+}
+
+header nav div:last-child{
+    justify-content: end;
+    gap: 10px;
+}
+
+header nav div:last-child svg{
+    width: 25px;
+    color: white;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+header nav div:last-child svg:hover{
+    color: #b9a16b;
+}
+
+header nav ul:first-child{
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header nav ul:first-child li{
+    list-style: none;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul:first-child li.scrool{
+    color: #b9a16b;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header nav ul:first-child li.scrool svg{
+    color: #b9a16b;
+    width: 15px;
+}
+
+header nav ul:first-child li ul{
+    display: none;
+    position: absolute;
+    left: 0px;
+    padding: 0;
+}
+
+header nav ul:first-child li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul:first-child li:hover a,
+header nav ul:first-child li.scrool ul li:hover a{
+    color: #b9a16b;
+    font-weight: 600;
+}
+
+header nav ul:first-child li.scrool:hover ul{
+    display: flex;
+    background-color: black;
+    top: 100%;
+    width: 200px;
+    padding: 25px 10px;
+    border: 1px solid white;
+    gap: 10px;
+    flex-direction: column;
+}
+
+header nav ul:first-child li.scrool:hover ul a{
+    color: #e0e0e0e4;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* footer */
+footer{
+    background-color: #1b1b1b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+footer > div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+}
+footer > div div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #c2c2c2;
+}
+footer > div ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer > div ul li{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    width: fit-content;
+}
+footer > div div:first-child ul li:hover,
+footer > div div:nth-child(2) ul li:hover{
+    color: #b9a16b;
+    font-weight: 600;
+}
+footer > div ul li svg{
+    width: 20px;
+}
+footer > div div:nth-child(3) ul li:last-child{
+    margin-top: 30px;
+}
+footer > div div:nth-child(3) ul li:last-child svg{
+    transition: transform .3s;
+    cursor: pointer;
+}
+footer > div div:nth-child(3) ul li:last-child svg:hover{
+    transform: translateY(-10px);
+}
+footer > div div:last-child  ul li,
+footer > div div:nth-child(3)  ul li{
+    cursor: auto;
+}
+footer > div div:last-child  ul li:last-child{
+    position: relative;
+    width: 100%;
+}
+footer > div div:last-child  ul li form{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin-top: 10px;
+}
+footer > div div:last-child  ul li form input{
+    position: relative;
+    width: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+}
+footer > div div:last-child  ul li form button{
+    position: relative;
+    height: 100%;
+    padding: 6px 20px;
+    color: white;
+    background-color: #b9a16b;
+    border: none;
+}

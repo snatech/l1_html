@@ -1,0 +1,50 @@
+main{
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#blog{
+    display: flex;
+    flex-wrap: wrap;
+    width: 83%;
+    justify-content: space-between;
+}
+
+main div#blog > div{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+main div#blog > div h6{
+    color: #00000096;
+    font-weight: 400;
+}
+
+main div#blog > div:hover h6{
+    color: #b9a16b;
+}
+
+main div#blog > div div img{
+    transition: all .8s ease-in-out;
+}
+
+main div#blog > div:hover div img{
+    transform: scale(1.1);
+}
+
+main div#blog div > div {
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

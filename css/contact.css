@@ -1,0 +1,59 @@
+main div#title{
+    background-color: #ededed;
+}
+main div#title h5{
+    color: #1b1b1b;
+    font-weight: 300;
+}
+main div#contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+}
+main div#contact form{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+}
+main div#contact form h4{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+main div#contact form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+main div#contact form div input,
+main div#contact form div textarea{
+    padding: 7px 10px;
+    border: 1px solid #c8c8c8f3;
+    transition: border .3s ease-in-out;
+    outline: none;
+}
+main div#contact form div input:focus,
+main div#contact form div textarea:focus{
+    border-color: #000000;
+}
+
+main div#contact form button{
+    border-radius: 50px;
+    padding: 7px 0;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+main div#contact form button:hover{
+    border-color: #b9a16b;
+    background-color: #b9a16b;
+    color: white;
+}
